@@ -8,8 +8,8 @@
     "devtest": "grunt unit",
     "func": "./tests/functional/saucelabs.sh",
     "lint": "eslint --cache --ext .js,.jsx . --fix",
-    "prepublish": "grunt dist",
-    "postinstall": "grunt dist",
+    "prepublish": "grunt babel:dist",
+    "postinstall": "grunt babel:dist",
     "test": "grunt cover"
   },
   "repository": {
