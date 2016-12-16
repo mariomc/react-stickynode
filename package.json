@@ -4,12 +4,8 @@
   "description": "A performant and comprehensive React sticky",
   "main": "index.js",
   "scripts": {
-    "build": "grunt dist",
-    "devtest": "grunt unit",
     "func": "./tests/functional/saucelabs.sh",
     "lint": "eslint --cache --ext .js,.jsx . --fix",
-    "prepublish": "grunt babel:dist",
-    "postinstall": "grunt babel:dist",
     "test": "grunt cover"
   },
   "repository": {
@@ -33,7 +29,8 @@
   "dependencies": {
     "classnames": "^2.0.0",
     "react-addons-shallow-compare": "^0.14.2 || ^15.0.0",
-    "subscribe-ui-event": "^1.0.0"
+    "subscribe-ui-event": "^1.0.0",
+    "webpack": "^1.14.0"
   },
   "devDependencies": {
     "babel": "^5.0.0",
